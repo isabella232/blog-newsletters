@@ -64,7 +64,9 @@
             .displayblock {
                 display: block !important;
             }
-            td[class=displayblock]{
+            td[class=displayblock],
+            .title,
+            .text2{
                 -moz-box-sizing: border-box;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
@@ -84,15 +86,14 @@
     </style>
 </head>
 <body style="margin: 0; width:100%;min-width:100%">
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0;padding:0;background-color:#ffffff;border-collapse:collapse!important;width:100%!important">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0;padding:0;background-color:#ffffff;border-collapse:collapse!important;width:100%!important;">
         <tr>
-            <td align="center" valign="top" style="margin:0;padding:0;border:0;max-width:600px;;height: 60px" width="100%" height="60" class="minheight">
-                <table bgcolor="222228" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important;" class="templateColumns">
+            <td align="center" valign="top" style="background:#222228;margin:0;padding:0;border:0;max-width:600px;height: 60px;border-bottom:1px solid #35353A;" width="100%" height="60" class="minheight">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important;" class="templateColumns">
                     <tr>
-                        <td align="center" valign="middle" height="60" class="header" style="height:60px;font-size: 1px; line-height: 1px;border-bottom:1px solid #35353A;">
-
+                        <td align="center" valign="middle" height="60" class="header" style="height:60px;font-size: 1px; line-height: 1px;" width="100%">
                             <a href="https://auth0.com/?utm_source=email&utm_medium=newsletter&utm_campaign=03312015" style="border:0;text-decoration:none">
-                                <img src="logo@2x.png"  height="24" style="display:block;margin: 0; border: 0; padding: 0;" alt="">
+                                <img src="http://cdn.auth0.com/blog/newsletter/logo@2x.png"  height="24" style="display:block;margin: 0; border: 0; padding: 0;" alt="">
                             </a>
                         </td>
                     </tr>
@@ -100,7 +101,7 @@
             </td>
         </tr>
         <tr>
-            <td align="center" valign="top" style="margin:0;padding:0;border:0;width:100%!important;background: #222228;" bgcolor="#222228" class="minheight">
+            <td align="center" valign="top" style="margin:0;padding:0;border:0;width:100%!important;background-image:url('newsletter-bg.jpg');background-repeat:no-repeat;background-position: top center;background-color: #232227;" bgcolor="#232227" class="minheight">
 
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
@@ -109,26 +110,30 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important;max-width:600px;">
                                 <tr>
                                     <td valign="top" align="center" style="padding-top:39px;padding-right:0;padding-bottom:9px;padding-left:0;color:#ffffff;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:30px;text-align:center" class="title2">
-                                        <img src="logo-2@2x.png"  height="80" style="border: 0; padding: 0;" alt="">
+                                        <img src="http://cdn.auth0.com/blog/newsletter/logo-2@2x.png"  height="80" style="border: 0; padding: 0;" alt="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:30px;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:36px;text-align:center;" class="text2">Blog Stuff</td>
                                 </tr>
                                 <tr>
-                                    <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:28px;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:20px;line-height:25px;text-align:center;" class="text2">
-                                        New posts from the Auth0 Blog<br />
-                                        <span style="color:#FFF;color:rgba(255,255,255,.5);font-size:14px;">SEPTEMBER 2015</span>
+                                    <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:20px;line-height:25px;text-align:center;" class="text2">
+                                        New posts from the Auth0 Blog
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:40px;padding-left:0;color:#FFF;color:rgba(255,255,255,.7);font-family: 'ProximaNova', Helvetica, Arial;font-size:14px;line-height:24px;text-align:center;" class="text2">
-                                        Hi there! Welcome to Auth0’s blog newsletter. Hopefully you remember<br />
+                                    <td valign="top" align="center" style="padding-top:5px;padding-right:0;padding-bottom:28px;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:20px;line-height:25px;text-align:center;color:#919194;font-size:14px;" class="text2">
+                                        SEPTEMBER 2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:40px;padding-left:0;color:#919194;font-family: 'ProximaNova', Helvetica, Arial;font-size:14px;line-height:24px;text-align:center;" class="text2">
+                                        <span>Hi there! Welcome to Auth0’s blog newsletter. Hopefully you remember<br />
                                         signing up for this awesome content via our blog. If you didn’t, please let<br />
                                         us know by replying to this email or tap the unsubscribe link at the bottom<br />
                                         (although, of course we hope you’ll stick around). You can expect to hear<br />
                                         from us about once a month - we’ll send over a recap of recent blog posts<br />
-                                        and occasionally some other news. Happy reading!
+                                        and occasionally some other news. Happy reading!</span>
                                     </td>
                                 </tr>
                             </table>
@@ -139,8 +144,8 @@
         </tr>
 
         <tr>
-            <td align="center" valign="top" style="margin:0;padding:0;border:0;width:100%!important;" class="minheight">
-                <table bgcolor="#686872" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important" class="templateColumns">
+            <td width="100%" align="center" valign="top" style="background:#686872;margin:0;padding:0;border:0;width:100%!important;" class="minheight">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
                         <td valign="top" align="center" style="padding-top:16px;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:center" class="title">The Technical</td>
                     </tr>
@@ -156,7 +161,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
                         <td height="100" valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:left;" class="displayblock" width="100">
-                            <img src="image-1@2x.jpg" width="100" />
+                            <img src="http://cdn.auth0.com/blog/newsletter/image-1@2x.jpg" width="100" />
                         </td>
                         <td valign="top" align="center" style="padding-top:16px;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:center" class="displaynone" width="20">
                             &nbsp;
@@ -176,7 +181,7 @@
                                 <tr>
                                     <td valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#A4A4A4;font-family: 'ProximaNova', Helvetica, Arial;font-size:12px;line-height:14px;text-align:left;" class="displayblock">
                                         <a href="#" style="color:#000;text-decoration:none;">
-                                            READ MORE <img src="arrow@2x.png" width="5" />
+                                            READ MORE <img style="outline:none;border:none;text-decoration:none;" src="http://cdn.auth0.com/blog/newsletter/arrow@2x.png" width="5" />
                                         </a>
                                     </td>
                                 </tr>
@@ -187,7 +192,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
                         <td height="100" valign="top" align="left" style="padding-top:75px;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:left;" class="displayblock" width="100">
-                            <img src="image-2@2x.jpg" width="100" />
+                            <img src="http://cdn.auth0.com/blog/newsletter/image-2@2x.jpg" width="100" />
                         </td>
                         <td valign="top" align="center" style="padding-top:75px;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:center" class="displaynone" width="20">
                             &nbsp;
@@ -207,7 +212,7 @@
                                 <tr>
                                     <td valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#A4A4A4;font-family: 'ProximaNova', Helvetica, Arial;font-size:12px;line-height:14px;text-align:left;" class="displayblock">
                                         <a href="#" style="color:#000;text-decoration:none;">
-                                            READ MORE <img src="arrow@2x.png" width="5" />
+                                            READ MORE <img style="outline:none;border:none;text-decoration:none;" src="http://cdn.auth0.com/blog/newsletter/arrow@2x.png" width="5" />
                                         </a>
                                     </td>
                                 </tr>
@@ -236,7 +241,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
                         <td height="100" valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:left;" class="displayblock" width="100">
-                            <img src="placeholder-image@2x.jpg" width="100" />
+                            <img src="http://cdn.auth0.com/blog/newsletter/placeholder-image@2x.jpg" width="100" />
                         </td>
                         <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:center" class="displaynone" width="20">
                             &nbsp;
@@ -256,7 +261,7 @@
                                 <tr>
                                     <td valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#A4A4A4;font-family: 'ProximaNova', Helvetica, Arial;font-size:12px;line-height:14px;text-align:left;" class="displayblock">
                                         <a href="#" style="color:#000;text-decoration:none;">
-                                            READ MORE <img src="arrow@2x.png" width="5" />
+                                            READ MORE <img style="outline:none;border:none;text-decoration:none;" src="http://cdn.auth0.com/blog/newsletter/arrow@2x.png" width="5" />
                                         </a>
                                     </td>
                                 </tr>
@@ -285,7 +290,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="520" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
                         <td height="100" valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:left;" class="displayblock" width="100">
-                            <img src="ember@2x.jpg" width="100" />
+                            <img src="http://cdn.auth0.com/blog/newsletter/ember@2x.jpg" width="100" />
                         </td>
                         <td valign="top" align="center" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#FFF;font-family: 'ProximaNova', Helvetica, Arial;font-size:30px;line-height:38px;text-align:center" class="displaynone" width="20">
                             &nbsp;
@@ -305,7 +310,7 @@
                                 <tr>
                                     <td valign="top" align="left" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;color:#A4A4A4;font-family: 'ProximaNova', Helvetica, Arial;font-size:12px;line-height:14px;text-align:left;" class="displayblock">
                                         <a href="#" style="color:#000;text-decoration:none;">
-                                            READ MORE <img src="arrow@2x.png" width="5" />
+                                            READ MORE <img style="outline:none;border:none;text-decoration:none;" src="http://cdn.auth0.com/blog/newsletter/arrow@2x.png" width="5" />
                                         </a>
                                     </td>
                                 </tr>
@@ -321,18 +326,24 @@
 
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important" class="templateColumns">
                     <tr>
-                        <td align="center" valign="top" style="padding-bottom: 29px" class="minheight" height="234" style="height:234px">
+                        <td align="center" valign="top" class="minheight" height="234" style="padding-bottom: 29px;height:234px">
 
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse!important">
                                 <tr>
                                     <td style="font-size: 1px; line-height: 1px;" width="10">&nbsp;</td>
-                                    <td valign="top" align="center" style="padding-top:35px;padding-right:0;padding-bottom:20px;;padding-left:0;color:#ABABAB;font-family: 'ProximaNova', Helvetica, Arial;font-size:16px;line-height: 19px;text-align:center" class="title">
-                                        <span style="color:#FFF;color:rgba(255,255,255,.5);line-height:24px;text-align:center;">‘Blog Stuff’ is brought to you by Auth0 - a cloud-based platform that makes identity<br />simple for developers.<br /><br /><a href="#" style="color: #FFF;text-decoration:none">Learn more.</a></span>
+                                    <td valign="top" align="center" style="padding-top:35px;padding-right:0;padding-bottom:0;padding-left:0;color:#ABABAB;font-family: 'ProximaNova', Helvetica, Arial;font-size:16px;line-height: 19px;text-align:center" class="title">
+                                        <span style="color:#FFF;color:rgba(255,255,255,.5);line-height:24px;text-align:center;">‘Blog Stuff’ is brought to you by Auth0 - a cloud-based platform that makes identity<br />simple for developers.</span>
                                     </td>
                                     <td style="font-size: 1px; line-height: 1px;" width="10">&nbsp;</td>
                                 </tr>
                                 <tr>
-
+                                    <td style="font-size: 1px; line-height: 1px;" width="10">&nbsp;</td>
+                                    <td valign="top" align="center" style="padding-top:19px;padding-right:0;padding-bottom:20px;padding-left:0;color:#ABABAB;font-family: 'ProximaNova', Helvetica, Arial;font-size:16px;line-height: 19px;text-align:center" class="title">
+                                        <a href="#" style="color: #FFF;text-decoration:none">Learn more.</a>
+                                    </td>
+                                    <td style="font-size: 1px; line-height: 1px;" width="10">&nbsp;</td>
+                                </tr>
+                                <tr>
                                     <td style="font-size: 1px; line-height: 1px;" width="10">&nbsp;</td>
                                     <td valign="top" style="padding-bottom: 20px" align="center">
                                         <table align="center" border="0" cellpadding="0" cellspacing="0" width="188" style="border-collapse:separate!important;background:#eb5424;border-radius: 3px;">
@@ -365,7 +376,7 @@
                                                 </td>
                                                 <td class="displaynone" style="font-size: 1px; line-height: 1px;" width="20">&nbsp;</td>
                                                 <td valign="middle" align="center" style="color:#999999;font-family:'ProximaNova',Helvetica, Arial;font-size:12px;line-height:18px;text-align:center;white-space:nowrap">
-                                                    <a href="http://twitter.com/auth0" style="border:0;text-decoration:none"><img src="twitter.png" width="18" style="display:block;border:0;margin:auto" alt=""></a>
+                                                    <a href="http://twitter.com/auth0" style="border:0;text-decoration:none"><img src="http://cdn.auth0.com/blog/newsletter/twitter.png" width="18" style="display:block;border:0;margin:auto" alt=""></a>
                                                 </td>
                                             </tr>
                                         </table>
